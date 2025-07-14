@@ -27,11 +27,8 @@ echo 'src-git partexp https://github.com/sirpdboy/luci-app-partexp.git;main' >>f
 echo 'src-git netspeedtest https://github.com/sirpdboy/luci-app-netspeedtest.git' >>feeds.conf.default
 echo 'src-git netwizard https://github.com/sirpdboy/luci-app-netwizard.git' >>feeds.conf.default
 echo 'src-git watchdog https://github.com/sirpdboy/luci-app-watchdog.git' >>feeds.conf.default
-#echo 'src-git advancedplus https://github.com/sirpdboy/luci-app-advancedplus.git' >>feeds.conf.default
 echo 'src-git taskplan https://github.com/sirpdboy/luci-app-taskplan.git' >>feeds.conf.default
 echo 'src-git timecontrol https://github.com/sirpdboy/luci-app-timecontrol.git' >>feeds.conf.default
-#echo 'src-git parentcontrol https://github.com/sirpdboy/luci-app-parentcontrol.git' >>feeds.conf.default
-#echo 'src-git eqosplus https://github.com/sirpdboy/luci-app-eqosplus.git' >>feeds.conf.default
 echo 'src-git poweroffdevice https://github.com/sirpdboy/luci-app-poweroffdevice.git' >>feeds.conf.default
 echo 'src-git store https://github.com/linkease/istore.git' >>feeds.conf.default
 echo 'src-git linkease_nas https://github.com/linkease/nas-packages.git' >>feeds.conf.default
