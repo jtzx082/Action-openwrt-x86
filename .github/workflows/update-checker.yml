@@ -56,7 +56,7 @@ jobs:
           {
             "repository_owner": "openwrt",
             "repository_name": "openwrt",
-            "repository_branch": "openwrt-24.10"
+            "repository_branch": "main"
           }
     
     - name: 删除 workflow runs
