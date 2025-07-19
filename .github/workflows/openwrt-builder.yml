@@ -85,6 +85,15 @@ jobs:
       - name: Update feeds
         run: cd openwrt && ./scripts/feeds update -a
 
+      - name: Update feeds
+        run: cd openwrt
+          rm -rf openwrt/package/utils/audit
+          rm -rf openwrt/package/utils/busybox
+          rm -rf openwrt/package/boot/kexec-tools
+          rm -rf openwrt/package/network/services/lldpd
+          rm -rf openwrt/package/utils/policycoreutils
+          rm -rf openwrt/package/feeds/third_party/luci-app-LingTiGameAcc/Makefile
+
       - name: Install feeds
         run: cd openwrt && ./scripts/feeds install -a
 
