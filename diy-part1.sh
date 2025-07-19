@@ -19,17 +19,6 @@ sed -i 's/DEPENDS:= /DEPENDS:= +liblz4 +libuuid /' package/utils/erofs-utils/Mak
 # 若仍失败，回退到稳定版本
 #echo "src-git erofs https://github.com/openwrt/openwrt.git" >> feeds.conf.default
 
-# 删掉 busybox/Makefile 里关于 libpam、libtirpc 的依赖
-sed -i '/libpam/d' openwrt/package/utils/busybox/Makefile
-sed -i '/libtirpc/d' openwrt/package/utils/busybox/Makefile
-# 其他包同理
-sed -i '/libev/d' openwrt/package/utils/audit/Makefile
-sed -i '/liblzma/d' openwrt/package/boot/kexec-tools/Makefile
-sed -i '/libnetsnmp/d' openwrt/package/network/services/lldpd/Makefile
-sed -i '/libpam/d' openwrt/package/utils/policycoreutils/Makefile
-sed -i '/libwavpack/d' openwrt/package/feeds/packages/sox_ng/Makefile
-sed -i '/LingTiGameAcc/d' openwrt/package/feeds/third_party/luci-app-LingTiGameAcc/Makefile
-
 # Add a feed source
 # echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2' >>feeds.conf.default
