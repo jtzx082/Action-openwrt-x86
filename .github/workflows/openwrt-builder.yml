@@ -68,7 +68,7 @@ jobs:
           sudo rm -rf /workdir
           sudo ln -s /mnt/workdir /workdir
 
-      - name: 克隆 source code
+      - name: Clone source code
         working-directory: /workdir
         run: |
           df -hT $PWD
@@ -169,7 +169,7 @@ jobs:
           body_path: release.txt
           files: ${{ env.FIRMWARE }}/*
 
-      - name: 删除 workflow runs
+      - name: Delete workflow runs
         uses: Mattraks/delete-workflow-runs@main
         with:
           retain_days: 0
