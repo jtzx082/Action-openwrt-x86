@@ -35,4 +35,4 @@ echo 'src-git linkease_nas https://github.com/linkease/nas-packages.git' >>feeds
 echo 'src-git linkease_nas_luci https://github.com/linkease/nas-packages-luci.git' >>feeds.conf.default
 echo 'src-git third https://github.com/jjm2473/openwrt-third.git' >>feeds.conf.default
 echo 'src-git third_party https://github.com/linkease/istore-packages.git' >>feeds.conf.default
-echo 'src-git ddns_go https://github.com/sirpdboy/luci-app-ddns-go.git' >>feeds.conf.default
+echo 'src-git ddns_go https://github.com/jtzx082/luci-app-ddns-go.git' >>feeds.conf.default
