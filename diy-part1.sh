@@ -22,17 +22,3 @@ sed -i 's/DEPENDS:= /DEPENDS:= +liblz4 +libuuid /' package/utils/erofs-utils/Mak
 # Add a feed source
 # echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2' >>feeds.conf.default
-echo 'src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main' >>feeds.conf.default
-echo 'src-git partexp https://github.com/sirpdboy/luci-app-partexp.git;main' >>feeds.conf.default
-echo 'src-git netspeedtest https://github.com/sirpdboy/luci-app-netspeedtest.git' >>feeds.conf.default
-echo 'src-git netwizard https://github.com/sirpdboy/luci-app-netwizard.git' >>feeds.conf.default
-echo 'src-git watchdog https://github.com/sirpdboy/luci-app-watchdog.git' >>feeds.conf.default
-echo 'src-git taskplan https://github.com/sirpdboy/luci-app-taskplan.git' >>feeds.conf.default
-echo 'src-git timecontrol https://github.com/sirpdboy/luci-app-timecontrol.git' >>feeds.conf.default
-echo 'src-git poweroffdevice https://github.com/sirpdboy/luci-app-poweroffdevice.git' >>feeds.conf.default
-echo 'src-git store https://github.com/linkease/istore.git' >>feeds.conf.default
-echo 'src-git linkease_nas https://github.com/linkease/nas-packages.git' >>feeds.conf.default
-echo 'src-git linkease_nas_luci https://github.com/linkease/nas-packages-luci.git' >>feeds.conf.default
-echo 'src-git third https://github.com/jjm2473/openwrt-third.git' >>feeds.conf.default
-echo 'src-git third_party https://github.com/linkease/istore-packages.git' >>feeds.conf.default
-echo 'src-git ddns_go https://github.com/jtzx082/luci-app-ddns-go.git' >>feeds.conf.default
