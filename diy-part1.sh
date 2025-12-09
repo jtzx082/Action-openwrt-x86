@@ -17,3 +17,7 @@
 # echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 # echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 # echo 'src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main' >>feeds.conf.default
+# 添加 kenzo 源 (包含绝大多数热门插件)
+echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
+# 添加 small 源 (kenzo 的依赖库，通常建议配合使用)
+echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
