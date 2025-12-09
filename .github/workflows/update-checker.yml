@@ -13,13 +13,13 @@
 name: Update Checker
 
 env:
-  REPO_URL: https://github.com/openwrt/openwrt #检查源码地址
-  REPO_BRANCH: openwrt-24.10
+  REPO_URL: https://github.com/openwrt/openwrt.git #检查源码地址
+  REPO_BRANCH: v24.10.4
 
 on:
   workflow_dispatch:
- # schedule:
- #   - cron: 0 */06 * * *
+  schedule:
+    - cron: 0 */06 * * *
 
 jobs:
   check:
@@ -56,7 +56,7 @@ jobs:
           {
             "repository_owner": "openwrt",
             "repository_name": "openwrt",
-            "repository_branch": "openwrt-24.10"
+            "repository_branch": "v24.10.4"
           }
     
     - name: 删除 workflow runs
