@@ -49,8 +49,8 @@ echo "正在安装 feeds..."
     exit 1;
 }
 
-echo "启动交互式配置界面..."
-make menuconfig
+#echo "启动交互式配置界面..."
+#make menuconfig
 
 # 检查是否生成了配置文件
 if [ ! -f .config ]; then
